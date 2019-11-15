@@ -14,6 +14,6 @@ export class ViewsService {
   }
 
   public consultarDatos() {
-    return this._apiService.getMethod(environment.portComposite, environment.todos, this.token);
+    return this._apiService.getMethod(environment.portComposite, '', this.token);
   }
 }

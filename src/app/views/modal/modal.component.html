@@ -1,0 +1,14 @@
+<section>
+  <div class="info">
+    <h2>{{ arrayDetallePais.name }}</h2>
+    <p>Región: <span>{{ arrayDetallePais.region  }}</span></p>
+    <p>Population: <span>{{ arrayDetallePais.population  }}</span></p>
+    <p>Capital: <span>{{ arrayDetallePais.capital  }}</span></p>
+    <p>Currency: <span>{{ arrayDetallePais.currencies[0].name  }}</span></p>
+    <p>Lenguage: <span>{{ arrayDetallePais.languages[0].nativeName  }}</span></p>
+    <p>Border Countries: <span>{{ arrayDetallePais.borders }}</span></p>
+  </div>
+  <div class="flag">
+    <img src="{{ arrayDetallePais.flag }}" alt="flag">
+  </div>
+</section>

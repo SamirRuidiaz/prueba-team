@@ -1,0 +1,26 @@
+section{
+  .info{
+    float: left;
+    width: 60%;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-weight: 800;
+      font-size: 16px;
+    }
+    span {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+  .flag{
+    float: right;
+    width: 40%;
+
+    img {
+      max-width: 100%;
+    }
+
+  }
+}

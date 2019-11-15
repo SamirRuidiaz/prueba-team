@@ -1,1 +1,80 @@
-<p>home works!</p>
+<div class="header">
+  <form [formGroup]="forgotForm" (ngSubmit)="onSubmitforgot()" autocomplete="off">
+    <input
+      type="text"
+      name="busqueda"
+      matInput
+      [formControl]="forgotForm.controls['busqueda']"
+      placeholder="Search"
+      value="">
+  </form>
+
+  <button
+    *ngIf="this.arrayBusqueda.length > 0"
+    (click)="clearsearch()">Clear search</button>
+
+</div>
+
+  <div *ngIf="this.arrayBusqueda.length > 0">
+    <section>
+      <h2>Resul</h2>
+      <div *ngFor="let pais of arrayBusqueda">
+        <div (click)="detallePais(pais)" class="itemPais">
+          <img src="{{ pais.flag }}" alt="imagen-pais">
+          <span> {{ pais.name }} </span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div *ngIf="this.arrayBusqueda.length == 0">
+    <section>
+      <h2>Africa</h2>
+      <div *ngFor="let pais of arrayAfrica">
+        <div (click)="detallePais(pais)" class="itemPais">
+          <img src="{{ pais.flag }}" alt="imagen-pais">
+          <span> {{ pais.name }} </span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>America</h2>
+      <div *ngFor="let pais of arrayAmerica">
+        <div (click)="detallePais(pais)" class="itemPais">
+          <img src="{{ pais.flag }}" alt="imagen-pais">
+          <span> {{ pais.name }} </span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Asia</h2>
+      <div *ngFor="let pais of arrayAsia">
+        <div (click)="detallePais(pais)" class="itemPais">
+          <img src="{{ pais.flag }}" alt="imagen-pais">
+          <span> {{ pais.name }} </span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Europa</h2>
+      <div *ngFor="let pais of arrayEuropa">
+        <div (click)="detallePais(pais)" class="itemPais">
+          <img src="{{ pais.flag }}" alt="imagen-pais">
+          <span> {{ pais.name }} </span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ocenania</h2>
+      <div *ngFor="let pais of arrayOceania">
+        <div (click)="detallePais(pais)" class="itemPais">
+          <img src="{{ pais.flag }}" alt="imagen-pais">
+          <span> {{ pais.name }} </span>
+        </div>
+      </div>
+    </section>
+  </div>

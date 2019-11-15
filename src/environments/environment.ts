@@ -4,17 +4,14 @@
 
 export const environment = {
   production: false,
-  apiURL: 'https://jsonplaceholder.typicode.com',
+  apiURL: 'https://restcountries.eu/rest/v2/all',
 
   // micro-servicios
   portComposite: '',
 
 
   // vesiones api
-  v1: '/api/v1',
-
-  todos: '/todos'
-
+  v1: '/api/v1'
 };
 
 /*

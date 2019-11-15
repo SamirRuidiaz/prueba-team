@@ -1,4 +1,12 @@
 export const environment = {
   production: true,
-  apiURL: 'http://192.168.1.38'
+  apiURL: 'https://restcountries.eu/rest/v2/all',
+
+  // micro-servicios
+  portComposite: '',
+
+
+  // vesiones api
+  v1: '/api/v1'
+
 };

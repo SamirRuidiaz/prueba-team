@@ -81,32 +81,4 @@ export class ApiService {
     return this._http.delete(urlOperation, {headers: headers}).map(res => res);
   }
 
-  // public uploadPost(body, puerto, endpoint, _token){
-  //   let headers = new HttpHeaders();
-  //   if (_token != null) {
-  //       headers.append('Authorization', 'jwt ' + _token);
-  //   }
-
-  //   return this._http.post(this.dominio+puerto+endpoint, body, {headers: headers} ).
-  //       map(res => res );
-  // }
-
-  // public uploadPut(body, puerto, endpoint, _token){
-  //   let headers = new HttpHeaders();
-
-  //   if (_token != null) {
-  //       headers.append('Authorization', 'jwt ' + _token);
-  //   }
-  //   return this._http.put(this.dominio+puerto+endpoint, body, {headers: headers} ).
-  //       map(res => res );
-  // }
-
-  // public uploadPatch(body, puerto, endpoint, _token){
-  //   let headers = new HttpHeaders();
-  //   if (_token != null) {
-  //       headers.append('Authorization', 'jwt ' + _token);
-  //   }
-  //   return this._http.patch(this.dominio+puerto+endpoint, body, {headers: headers} ).
-  //       map(res => res );
-  // }
 }
