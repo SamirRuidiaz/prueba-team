@@ -7,19 +7,12 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  appTitle = 'Egret';
+  appTitle = 'Demo';
 
   constructor(public title: Title){
   }
 
   ngOnInit() {
-    this.changePageTitle();
   }
-
-  changePageTitle() {
-    console.log("hola desde angular");
-  }
-
-
 
 }
